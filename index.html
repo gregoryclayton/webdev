@@ -1,0 +1,589 @@
+<html>
+
+<head>
+
+<link rel="shortcut icon" type="image/x-icon" href="C:/Users/grego/Desktop/pros/densityfm/rho.png">
+
+<style>
+
+html {
+
+    background-color: rgb(249, 246, 246);
+}
+
+
+.bigcontainer {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+ 
+    
+ 
+}
+
+
+.container {
+    width: 400px;
+    height:200px;
+    display: grid;
+    position: relative;
+    
+  
+    
+    justify-items: center;
+}
+
+.logo {
+
+    position: relative;
+    top: 20px;
+    
+ 
+}
+
+.quote {
+
+font-family: monospace;
+position: relative;
+font-size: 12px;
+margin-bottom: 40px;
+}
+
+.player {
+
+    position: relative;
+    height: 30px;
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: noneS;
+
+}
+
+.buttonscontainer {
+    width: 100%;
+    height: 30px;
+    
+    margin-bottom: 20px;
+    display: grid;
+    justify-items: center;
+    position: sticky;
+    top: 0.5%;
+    z-index: 10;
+}
+
+.buttonsbar {
+    width: 80%;
+    height: 30px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    box-shadow: 0px 1px 0px 1px #d4d2d2;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttonbarbutton {
+    height: 25px;
+    width: 20%;
+    /*background-color: rgb(222, 222, 255);*/
+    border-radius: 20px;
+    font-family: monospace;
+    margin-left: 2px;
+    font-size: 12px;
+    border-style: none;
+}
+.buttonbarbutton1 {
+    height: 25px;
+    width: 20%;
+  
+    border-radius: 20px;
+    font-family: monospace;
+    margin-left: 4%;
+    font-size: 12px;
+    border-style: none;
+}
+
+.buttonbarbutton:hover {
+  
+   color:rgb(69, 69, 69);
+   font-size: 17px;
+}
+
+.buttonbarbutton1:hover {
+  
+  color:rgb(69, 69, 69);
+  font-size: 17px;
+}
+
+.card1container {
+   
+    height: 55vh;
+    width: 100%; 
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.card1 {
+    background-color: antiquewhite;
+    height: 53vh;
+    width: 95%;
+    border-radius: 10px;
+    justify-items: left;
+    display: grid;
+    align-items: center;
+    background-image: url("https://picsum.photos/2000/700/?random=") ;
+    background-size: 100% 100%;
+    box-shadow: 0px 3px 0px 1px #d4d2d2;
+    
+}
+
+.card1wordscontainer {
+   
+    background-image: linear-gradient(to bottom right, rgba(226, 121, 121, 0.5), rgba(229, 194, 194, 0.5));
+    height: 40vh;
+    width: 360px;
+    margin-left: 20px;
+    align-items: end;
+    
+    font-family: monospace;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card2container {
+   
+    height: 40vh;
+    width: 100%; 
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    margin-top: 10px;
+}
+
+.card2 {
+    background-color: antiquewhite;
+    height: 38vh;
+    width: 60%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: center;
+
+    margin-right: 30px;
+}
+
+.card2picture {
+    background-color: rgb(252, 190, 108);
+    height: 35vh;
+    width: 33%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: left;
+    left: 3%;
+    position: absolute;
+
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+.card2wordscontainer {
+    background-color: aqua;
+    height: 35vh;
+    width: 95%;
+    justify-items: ;
+    align-items: baseline;
+    display: grid;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: %;
+}
+
+.card3container {
+  
+    height: 40vh;
+    width: 100%; 
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    margin-top: 10px;
+}
+
+.card3 {
+    background-color: antiquewhite;
+    height: 38vh;
+    width: 60%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: center;
+
+    margin-left: 30px;
+}
+
+.card3picture {
+    background-color: rgb(252, 190, 108);
+    height: 35vh;
+    width: 33%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: left;
+    right: 3%;
+    position: absolute;
+
+    margin-left: 40px;
+    object-fit: cover;
+}
+
+.card3wordscontainer {
+    background-color: aqua;
+    height: 35vh;
+    width: 95%;
+    justify-items: ;
+    align-items: baseline;
+    display: grid;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: %;
+}
+
+.card4container {
+   
+    height: 40vh;
+    width: 100%; 
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    margin-top: 10px;
+}
+
+.card4 {
+    background-color: antiquewhite;
+    height: 38vh;
+    width: 60%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: center;
+
+    margin-right: 30px;
+}
+
+.card4picture {
+    background-color: rgb(252, 190, 108);
+    height: 35vh;
+    width: 33%;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    align-items: left;
+    left: 3%;
+    position: absolute;
+
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+.card4wordscontainer {
+    background-color: aqua;
+    height: 35vh;
+    width: 95%;
+    justify-items: ;
+    align-items: baseline;
+    display: grid;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: %;
+}
+.card5container {
+   
+    height: 40vh;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.card5_1 {
+    background-color: antiquewhite;
+    height: 35vh;
+    width: 33%;
+    border-radius: 10px;
+    justify-items: left;
+    display: grid;
+    margin-left: 20px;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+    align-items: baseline;
+    justify-items: baseline;
+}
+
+.card5 {
+    background-color: rgba(132, 103, 65, 0);
+    height: 35vh;
+    width: 80%;
+    border-radius: 10px;
+    justify-items:baseline;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    font-family: monospace;
+    overflow: wrap;
+
+}
+
+.card5img {
+    border-radius: 30%;
+    margin-top: 10px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card5_1::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.card6container {
+    background-color: rgb(165, 165, 229);
+    height: 40vh;
+    width: 100%; 
+    display: flex;
+    align-items: baseline;
+    justify-items: center;
+    margin-top: 10px;
+    border-radius: 10px;   
+   
+}
+
+.card6 {
+    display:grid;
+    color: white;
+    width:16%;
+    height: 35vh;
+  
+    margin:18px;
+    justify-items: center;
+    align-items: center;
+    overflow: visible;
+    font-family: monospace;
+   
+}
+
+.card6_1 {
+    display:grid;
+    font-family: monospace;
+    width:200px;
+    height: 35vh;
+   
+    margin:18px;
+    justify-items: baseline;
+    align-items: baseline;
+    overflow: hidden;
+    color: white;
+}
+
+.footerwords {
+    height: 10%;
+    font: white;
+}
+
+</style>
+
+<div class="bigcontainer">
+    <div class="container">
+
+        <img class="logo" src="C:/Users/grego/Desktop/density/rho.png" style="width: 50px;">
+
+
+        <div class="quote"><i>mass over volume</i></div>
+
+       
+
+    </div>
+</div>
+
+<div class="buttonscontainer">
+    <div class="buttonsbar">
+
+        <audio class="player" controls>
+            <source src="C:/Users/grego/Desktop/pros/densityfm/music1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a class="buttonbarbutton1" href="C:/Users/grego/Desktop/pros/densityfm/media.html"><button class="buttonbarbutton1">media</button></a>
+        <a class="buttonbarbutton" href=""><button class="buttonbarbutton">projects</button></a>
+       <a class="buttonbarbutton" href=""><button class="buttonbarbutton">contact</button></a>
+       
+       
+   
+    </div>
+</div>
+
+</head>
+
+<body>
+
+
+
+<div class="card1container">
+    <div class="card1">
+        <div class="card1wordscontainer">
+            <h1><i>trading desk</i></h1>
+            <h3>ridings the bulls</h3>
+            <p> it really is the reall worldrthrthrth
+            rthrthrthrthrthrthrthrthrthrthrthrthrth
+            rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+            hrthrthrthrthrthrthit really is the reall worldrthrthrth
+            rthrthrthrthrthrthrthrthrthrthrthrthrth
+           </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="card2container">
+   <img class="card2picture" src="https://picsum.photos/500/500/?random=">
+    <div class="card2">
+        <div class="card2wordscontainer" style="z-index: 0;">
+           <p> it really is the reall worldrthrthrth
+            rthrthrthrthrthrthrthrthrthrthrthrthrth
+            rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+            hrthrthrthrthrthrthit really is the reall worldrthrthrth
+            rthrthrthrthrthrthrthrthrthrthrthrthrth
+            rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+            hrthrthrthrthrthrth
+           </p> 
+        </div>
+
+    </div>
+</div>
+
+<div class="card3container">
+    <img class="card3picture" src="https://picsum.photos/320/320/?random=">
+     <div class="card3">
+         <div class="card3wordscontainer" style="z-index: 0;">
+            <p> it really is the reall worldrthrthrth
+             rthrthrthrthrthrthrthrthrthrthrthrthrth
+             rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+             hrthrthrthrthrthrthit really is the reall worldrthrthrth
+             rthrthrthrthrthrthrthrthrthrthrthrthrth
+             rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+             hrthrthrthrthrthrth
+            </p> 
+         </div>
+ 
+     </div>
+ </div>
+
+ <div class="card4container">
+    <img class="card4picture" src="https://picsum.photos/320/320/?random=">
+     <div class="card4">
+         <div class="card4wordscontainer" style="z-index: 0;">
+            <p> it really is the reall worldrthrthrth
+             rthrthrthrthrthrthrthrthrthrthrthrthrth
+             rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+             hrthrthrthrthrthrthit really is the reall worldrthrthrth
+             rthrthrthrthrthrthrthrthrthrthrthrthrth
+             rthrthrhrthhhhhhhhhhhhhhhhhhhhhhhhhh
+             hrthrthrthrthrthrth
+            </p> 
+         </div>
+ 
+     </div>
+ </div>
+
+ <div class="card5container">
+   
+    <div class="card5_1">
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+         
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+            <p>gigantic</p>
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+        </div>
+    </div>  
+
+    <div class="card5_1">
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+            <p>gigantghghghghghghghghghghg<br>
+                hghghghghghghgergerghghgic<br>
+                gdfgdgdgdfgdfgdgdfgdgdfgdf
+            </p>
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+            <p>gigaddfsdfsdfntic<br>guantidgigantic<br>ewrwerwerwere</p>
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+        </div>
+    </div>
+    <div class="card5_1">
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+            <p>gigantghghghghghghghghghghghghghghghghghghghgic</p>
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+            <p>gigantic</p>
+        </div>
+        <div class="card5"> 
+            <img class="card5img" src="https://picsum.photos/100/100/?random=">
+        </div>
+    </div>
+
+
+
+ </div>
+
+ <div class="card6container">
+    <div class="card6_1">
+       <img class="logo" src="C:/Users/grego/Desktop/density/rho.png" style="width: 50px; margin-left: 10px;">
+       <div class="footerwords"><br>densityatdesnitydotcom</div>
+       <div class="footerwords">emails</div>
+       <div class="footerwords">other info</div>
+    </div>
+
+    <div class="card6">
+        <div class="footerwords">media</div>
+        <div class="footerwords">videos</div>
+        <div class="footerwords">images</div>
+    </div>
+    <div class="card6">
+        <p class="footerwords">audio</p>
+        <p class="footerwords">articles</p>
+        <p class="footerwords">fiction</p>
+    </div>
+    <div class="card6">
+        <p class="footerwords">books</p>
+        <p class="footerwords">scripts</p>
+        <p class="footerwords">random</p>
+    </div>
+    <div class="card6">
+        <p class="footerwords">projects</p>
+        <p class="footerwords">in progress</p>
+        <p class="footerwords">completed</p>
+    </div>
+
+ </div>
+
+</body>
+
+</html>
